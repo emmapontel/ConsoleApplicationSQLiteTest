@@ -15,7 +15,7 @@ namespace ConsoleApplicationSQLiteTest {
       m_dbConnection = new SQLiteConnection("Data Source=MyDatabase.sqlite;Version=3;");
       m_dbConnection.Open();
 
-      //creato la tabella
+      //creato la tabella i
       string sql = "CREATE TABLE highscores (name VARCHAR(20), score INT)";
       SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
       command.ExecuteNonQuery();
